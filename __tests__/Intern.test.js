@@ -1,4 +1,4 @@
-const Intern = require ('./lib/Intern');
+const Intern = require ('../lib/Intern');
 
 // Test object
 describe('Intern', () => {
@@ -9,14 +9,14 @@ describe('Intern', () => {
     });
     // Test that school is added
     it ('A school is added to the intern object', () => {
-        const school = 'University of Toronto';
+        const school = 'University';
         const employee = new Intern ('John', 1234, 'john@gmail.com', school);
-        expect (employee.school).toBe('University of Toronto');
+        expect (employee.school).toBe('University');
     });
     // Test that role is updated to intern
     it ('A role is added to the employee object', () => {
             const role = 'Intern';
-            const employeeInstance = new Intern ('John', 1234, 'john@gmail.com', 'University of Toronto', role);
+            const employeeInstance = new Intern ('John', 1234, 'john@gmail.com', 'University', role);
             expect (employeeInstance.getRole()).toBe(role);
         });
 });
@@ -25,7 +25,7 @@ describe('Intern', () => {
 describe('Intern', () => {
     // Test getSchool() method
     it ('School is retrieved using getSchool() method', () => {
-        const testSchool = 'University of Toronto';
+        const testSchool = 'University';
         const employee = new Intern ('John', 1234, 'john@gmail.com', testSchool);
         expect (employee.getSchool()).toBe(testSchool);
     });

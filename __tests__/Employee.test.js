@@ -1,4 +1,4 @@
-const Employee = require ('./lib/Employee');
+const Employee = require('../lib/Employee');
 
 // Test object
 describe('Employee', () => {
@@ -22,7 +22,7 @@ describe('Employee', () => {
     // Test that email is added to employee
     it ('An email is added to the employee object', () => {
         const email = 'john@gmail.com';
-        const employee = new Employee ('John', 1234, email;
+        const employee = new Employee ('John', 1234, email);
         expect (employee.email).toBe('john@gmail.com');
     });
     // Test that role is added to employee

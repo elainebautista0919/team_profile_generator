@@ -1,4 +1,4 @@
-const Engineer = require ('./lib/Engineer');
+const Engineer = require ('../lib/Engineer');
 
 // Test object
 describe('Engineer', () => {
@@ -22,11 +22,11 @@ describe('Engineer', () => {
 });
 
 // Test method
-describe('Engineer, () => {
+describe('Engineer', () => {
     // Test getGitHub() method
     it ('GitHub username is retrieved using getGitHub() method', () => {
         const testGitHub = 'elaine0919';
-        const employee = new Employee ('John', 1234, 'john@gmail.com', testGitHub);
+        const employee = new Engineer ('John', 1234, 'john@gmail.com', testGitHub);
         expect (employee.getGitHub()).toBe(testGitHub);
     });
 });
