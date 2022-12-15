@@ -29,7 +29,7 @@ describe('Employee', () => {
     it ('A role is added to the employee object', () => {
             const role = 'Employee';
             const employeeInstance = new Employee ('John', 1234, 'john@gmail.com', role);
-            expect (employeeInstance.getRole()).toBe('Employee');
+            expect (employeeInstance.getRole()).toBe(role);
         });
 });
 
