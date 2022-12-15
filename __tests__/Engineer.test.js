@@ -22,11 +22,11 @@ describe('Engineer', () => {
 });
 
 // Test method
-describe('Employee', () => {
+describe('Engineer, () => {
     // Test getGitHub() method
     it ('GitHub username is retrieved using getGitHub() method', () => {
         const testGitHub = 'elaine0919';
-        const employee = new Employee ('John', 1234, 'john@gmail.com', 'elaine0919', testGitHub);
+        const employee = new Employee ('John', 1234, 'john@gmail.com', testGitHub);
         expect (employee.getGitHub()).toBe(testGitHub);
     });
 });
