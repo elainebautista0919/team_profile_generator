@@ -1,0 +1,22 @@
+/* Element Selectors */
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 700;
+  }
+  
+/* Class Selectors */
+  
+  .team-profile-header {
+    background-color: #4a9bdd;
+    padding: 2rem;
+  }
+  
+
+  
+  .employee-header {
+    background-color: #4a9bdd;
+  }
