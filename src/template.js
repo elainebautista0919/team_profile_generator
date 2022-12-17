@@ -107,4 +107,4 @@ const createTemplate = (team) => `
 </html>
 `;
 
-module.exports = renderMain;
+module.exports = createTemplate;

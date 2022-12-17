@@ -8,6 +8,14 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+// Output files
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const outputFile = path.join(DIST_DIR, 'index.html');
+const templateHTML = require('./src/template')
+
+// Create empty array of team members
+const teamMembers = [];
+
 // Add Team Member
 function addTeamMember() {
     inquirer
@@ -130,4 +138,18 @@ function addIntern () {
     };
 
     // Create HTML file
-    
+    function createTeamFile() {
+        if (!fs.existsSync(DIST_DIR)) {
+            fs.mkdirSync(DIST_DIR);
+    }   else {
+        fs.writeFileSync(outputFile, templateHTML(teamMembers), 'utf-8');
+        console.log('The HTML file has been created in the dist folder.');
+    }
+}
+
+function startApp() {
+    addManager();
+}
+
+startApp();
+
