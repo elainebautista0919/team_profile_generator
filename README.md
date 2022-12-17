@@ -20,6 +20,8 @@
 
   The challenge focuses on the principles of Object Oriented Programming (OOP)
 
+  Demo: https://drive.google.com/file/d/1BVyTC7DxYrQCJXm3200N3TjFRIhkyaav/view?usp=sharing
+
   ## Installation
 
   In order to use the application: 
