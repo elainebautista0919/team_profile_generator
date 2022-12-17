@@ -21,6 +21,9 @@
   The challenge focuses on the principles of Object Oriented Programming (OOP)
 
   Demo: https://drive.google.com/file/d/1BVyTC7DxYrQCJXm3200N3TjFRIhkyaav/view?usp=sharing
+  
+  Screenshot: 
+  <img src="./assets/screenshot.png">
 
   ## Installation
 

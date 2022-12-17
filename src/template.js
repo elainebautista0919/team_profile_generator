@@ -10,7 +10,7 @@ const createTeam = (team) => {
             <ul class="list-group">
                 <li class="list-group-item">ID: ${manager.id}</li>
                 <li class="list-group-item">
-                    Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
+                    Email: <a href="mailto ${manager.email}">${manager.email}</a></li>
                 <li class="list-group-item">Office number: ${manager.officeNumber}</li>
             </ul>
         </div>
@@ -27,7 +27,7 @@ const createTeam = (team) => {
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${engineer.id}</li>
                     <li class="list-group-item">
-                        Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+                        Email: <a href="mailto: ${engineer.email}">${engineer.email}</a></li>
                     <li class="list-group-item">
                     GitHub:<a href="https://github.com/${engineer.gitHub}" target="_blank"rel="noopener noreferrer"> ${engineer.gitHub}</a></li>
                 </ul>
@@ -44,7 +44,7 @@ const createTeam = (team) => {
             <div class="card-body">
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${intern.id}</li>
-                    <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
+                    <li class="list-group-item">Email: <a href="mailto: ${intern.email}">${intern.email}</a></li>
                     <li class="list-group-item">School: ${intern.school}</li>
                 </ul>
             </div>
