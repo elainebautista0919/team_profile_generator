@@ -23,7 +23,7 @@ function addTeamMember() {
         {
             type: 'list',
             name: 'teamMember',
-            message: 'Add an engineer or an intern or finish building my team?',
+            message: 'Add an engineer, an intern or finish building my team?',
             choices: ['Engineer', 'Intern', 'Assemble Team'],
         },
     ])
@@ -130,7 +130,7 @@ function addIntern () {
             },
         ])
         .then((val) => {
-            const engineer = new Engineer(val.name, val.id, val.email, val.gitHub);
+            const engineer = new Intern(val.name, val.id, val.email, val.school);
             console.table(engineer);
             teamMembers.push(engineer);
             addTeamMember();

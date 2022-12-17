@@ -29,7 +29,7 @@ const createTeam = (team) => {
                     <li class="list-group-item">
                         Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
                     <li class="list-group-item">
-                    GitHub:<a href="https://github.com/${engineer.gitHub}" target="_blank"rel="noopener noreferrer">${engineer.gitHub}</a></li>
+                    GitHub:<a href="https://github.com/${engineer.gitHub}" target="_blank"rel="noopener noreferrer"> ${engineer.gitHub}</a></li>
                 </ul>
             </div>
         </div>`;
@@ -60,7 +60,7 @@ const createTeam = (team) => {
     html.push(team.filter(employee => employee.getRole() === 'Engineer').map((engineer) => createEngineer(engineer)).join(''));
 
     // Add intern to HTML cards
-    html.push(team.filter(employee => employee.getRole() === 'Intern').map((intern) => createEngineer(intern)).join(''));
+    html.push(team.filter(employee => employee.getRole() === 'Intern').map((intern) => createIntern(intern)).join(''));
     
     return html.join('\n');
 };
