@@ -21,7 +21,7 @@ const createTeam = (team) => {
         `<div class="card col-3 me-3 mb-5 employee-card">
             <div class="card-header employee-header">
                 <h2 class="card-title">${engineer.name}</h2>
-                <h3 class="card-title"><i class="fa-solid fa-people-roof"></i> ${engineer.role}</h3>
+                <h3 class="card-title"><i class="fa-solid fa-wrench"></i> ${engineer.role}</h3>
             </div>
             <div class="card-body">
                 <ul class="list-group">
@@ -39,7 +39,7 @@ const createTeam = (team) => {
         `<div class="card col-3 me-3 mb-5 employee-card">
             <div class="card-header employee-header">
                 <h2 class="card-title">${intern.name}</h2>
-                <h3 class="card-title"><i class="fa-solid fa-people-roof"></i> ${intern.role}</h3>
+                <h3 class="card-title"><i class="fa-solid fa-user-graduate"></i> ${intern.role}</h3>
             </div>
             <div class="card-body">
                 <ul class="list-group">
